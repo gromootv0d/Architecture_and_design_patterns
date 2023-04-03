@@ -15,7 +15,6 @@ namespace ArchitectureAndDesignPatterns
             double b = 1;
             double c = 0;
 
-            var solver = new QuadraticEquationSolver();
             double[] roots = QuadraticEquationSolver.Solve(a, b, c);
             if (roots.Length == 0)
             {
