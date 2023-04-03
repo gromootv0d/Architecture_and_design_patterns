@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ArchitectureAndDesignPatterns\QuadraticEquation.csproj" />
+    <ProjectReference Include="..\..\Services\ArchitectureAndDesignPatterns\QuadraticEquation.csproj" />
   </ItemGroup>
 
 </Project>
