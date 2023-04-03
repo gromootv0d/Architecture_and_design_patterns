@@ -10,16 +10,13 @@ namespace QuadraticEquation
     {     
         public static double[] Solve(double a, double b, double c, double epsolon = double.Epsilon)
         {
-            if (Math.Abs(a) < epsolon)
-            {
-                throw new ArgumentException("'a' cannot be zero.");
-            }
+            ValidateValues(a, b, c, epsolon);
 
             double discriminant = b * b - 4 * a * c;
 
             if (discriminant < 0)
             {
-                return Array.Empty<double>(); 
+                return Array.Empty<double>();
             }
             else if (discriminant == 0 || discriminant < epsolon)
             {
@@ -31,6 +28,19 @@ namespace QuadraticEquation
                 double root1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
                 double root2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
                 return new double[] { root1, root2 };
+            }
+        }
+
+        private static void ValidateValues(double a, double b, double c, double epsolon)
+        {
+            if (!double.IsFinite(a) || !double.IsFinite(b) || !double.IsFinite(c))
+            {
+                throw new ArgumentException("All inputs must be finite numbers.");
+            }
+
+            if (Math.Abs(a) < epsolon)
+            {
+                throw new ArgumentException("'a' cannot be zero.");
             }
         }
     }

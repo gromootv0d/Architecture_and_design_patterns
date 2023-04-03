@@ -69,5 +69,17 @@ namespace QuadraticEquationTests
             // Act
             Assert.Throws<ArgumentException>(() => QuadraticEquationSolver.Solve(a, b, c));
         }
+
+        [Fact]
+        public void Solve_NonNumericValues_ThrowsArgumentException()
+        {
+            // Arrange
+            double a = 1;
+            double b = double.NaN;
+            double c = 2;
+
+            // Act & Assert
+            Assert.Throws<ArgumentException>(() => QuadraticEquationSolver.Solve(a, b, c));
+        }
     }
 }
