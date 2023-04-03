@@ -70,13 +70,14 @@ namespace QuadraticEquationTests
             Assert.Throws<ArgumentException>(() => QuadraticEquationSolver.Solve(a, b, c));
         }
 
-        [Fact]
-        public void Solve_NonNumericValues_ThrowsArgumentException()
+        [Theory]
+        [InlineData(double.NaN, 1, 2)]
+        [InlineData(double.PositiveInfinity, 2, 3)]
+        [InlineData(double.NegativeInfinity, 4, 5)]
+        [InlineData(6, 7, double.PositiveInfinity)]
+        [InlineData(8, double.NegativeInfinity, 9)]
+        public void QuadraticEquationSolver_ShouldThrowArgumentException_WhenValueIsIncorrectFormat(double a, double b, double c)
         {
-            // Arrange
-            double a = 1;
-            double b = double.NaN;
-            double c = 2;
 
             // Act & Assert
             Assert.Throws<ArgumentException>(() => QuadraticEquationSolver.Solve(a, b, c));
