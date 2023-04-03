@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquation", "Services\ArchitectureAndDesignPatterns\QuadraticEquation.csproj", "{13FFBBCA-AF96-4D7B-800E-5607BEBC3970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquation", "Services\ArchitectureAndDesignPatterns\QuadraticEquation.csproj", "{13FFBBCA-AF96-4D7B-800E-5607BEBC3970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquationTests", "Tests\QuadraticEquationTests\QuadraticEquationTests.csproj", "{C04E1AD5-D30E-451D-A596-68B80CBF8F09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuadraticEquationTests", "Tests\QuadraticEquationTests\QuadraticEquationTests.csproj", "{C04E1AD5-D30E-451D-A596-68B80CBF8F09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C64C3A5B-2BF1-4C2F-9432-FC298ACB1EBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{302B4B6B-3A82-4F55-A08D-9F191A9757D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13FFBBCA-AF96-4D7B-800E-5607BEBC3970} = {C64C3A5B-2BF1-4C2F-9432-FC298ACB1EBB}
+		{C04E1AD5-D30E-451D-A596-68B80CBF8F09} = {302B4B6B-3A82-4F55-A08D-9F191A9757D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BABC917D-81BB-4B74-A6F9-510559E97CBB}
