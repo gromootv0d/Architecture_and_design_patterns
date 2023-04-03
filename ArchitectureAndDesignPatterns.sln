@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{302B4B6B-3A82-4F55-A08D-9F191A9757D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarGame", "CarGame\CarGame.csproj", "{34C5784D-1C17-4BE1-9CA9-2D88A92897C9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuadraticEquation", "QuadraticEquation", "{38F188A0-0F7C-45B5-A075-60A1A16084BE}"
 EndProject
 Global
@@ -29,10 +27,6 @@ Global
 		{C04E1AD5-D30E-451D-A596-68B80CBF8F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04E1AD5-D30E-451D-A596-68B80CBF8F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C04E1AD5-D30E-451D-A596-68B80CBF8F09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34C5784D-1C17-4BE1-9CA9-2D88A92897C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34C5784D-1C17-4BE1-9CA9-2D88A92897C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34C5784D-1C17-4BE1-9CA9-2D88A92897C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34C5784D-1C17-4BE1-9CA9-2D88A92897C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
