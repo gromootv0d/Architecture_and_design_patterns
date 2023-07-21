@@ -10,5 +10,8 @@ namespace CoolCar.Models
     {
         public int Fuel { get; set; }
         public int FuelConsumption { get; set; }
+
+        public int DistanceTraveled {get; set;}
+        public int CurrentSpeed { get; set;}
     }
 }

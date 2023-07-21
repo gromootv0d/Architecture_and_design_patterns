@@ -13,8 +13,8 @@ namespace CoolCar
     {
         static void Main()
         {
-            var carTank = new CarTank() { Fuel = 1000, FuelConsumption = 10 };
-            var moveCommand = new MoveCommand();
+            var carTank = new CarTank() { Fuel = 1000, FuelConsumption = 10, CurrentSpeed = 0, DistanceTraveled = 0 };
+            var moveCommand = new MoveForwardCommand(carTank, 10);
             var checkFuelCommand = new CheckFuelCommand(carTank);
             var burnFuelCommand = new BurnFuelCommand(carTank);
 
